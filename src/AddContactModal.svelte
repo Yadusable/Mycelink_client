@@ -1,10 +1,9 @@
 <script lang="ts">
 
     import CreateTenantModal from "./CreateTenantModal.svelte";
+    import {fade} from "svelte/transition";
 
     export let showAddContactModal:boolean= false;
-    import CreateAccountModal from "./CreateAccountModal.svelte"
-    import {fade} from "svelte/transition";
 
     let dialog:HTMLDialogElement;
     let form:HTMLFormElement

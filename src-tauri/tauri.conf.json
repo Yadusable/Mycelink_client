@@ -1,7 +1,7 @@
 {
   "productName": "Mycelink_client",
   "version": "0.0.0",
-  "identifier": "com.tauri.dev",
+  "identifier": "lorem.ipsum",
   "build": {
     "beforeDevCommand": "npm run dev",
     "devUrl": "http://localhost:1420",
@@ -19,7 +19,8 @@
     ],
     "security": {
       "csp": null
-    }
+    },
+    "withGlobalTauri": true
   },
   "bundle": {
     "active": true,

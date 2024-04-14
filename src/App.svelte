@@ -1,39 +1,28 @@
-<script lang="ts">
-  import Greet from './lib/Greet.svelte'
+<!-- App.svelte -->
+<script>
+  import ContactList from './Chatselectionframe.svelte';
+  import ChatArea from './Chatframe.svelte';
+  // import { invoke } from '@tauri-apps/api/tauri';
 </script>
 
-<main class="container">
-  <h1>Welcome to Tauri!</h1>
-
-  <div class="row">
-    <a href="https://vitejs.dev" target="_blank">
-      <img src="/vite.svg" class="logo vite" alt="Vite Logo" />
-    </a>
-    <a href="https://tauri.app" target="_blank">
-      <img src="/tauri.svg" class="logo tauri" alt="Tauri Logo" />
-    </a>
-    <a href="https://svelte.dev" target="_blank">
-      <img src="/svelte.svg" class="logo svelte" alt="Svelte Logo" />
-    </a>
-  </div>
-
-  <p>
-    Click on the Tauri, Vite, and Svelte logos to learn more.
-  </p>
-
-  <div class="row">
-    <Greet />
-  </div>
-
-
-</main>
+<div class="app-container">
+  <ContactList />
+  <ChatArea />
+</div>
 
 <style>
-  .logo.vite:hover {
-    filter: drop-shadow(0 0 2em #747bff);
+  .app-container {
+    display: grid;
+    grid-template-columns: minmax(200px, 280px) ;
+    grid-template-rows: minmax(50px, 40px) auto minmax(50px, 10%);
+    overflow: clip;
+    background: #e7e5df;
+    height: 100vh;
+    width: 100vw;
   }
 
-  .logo.svelte:hover {
-    filter: drop-shadow(0 0 2em #ff3e00);
+  /* AAAAAARRRRRGGGGGHHHHHH wtf*/
+  :global(body) {
+    margin: 0;
   }
 </style>

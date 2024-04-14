@@ -45,8 +45,6 @@
         /*--new-message-area-height: 40px;*/
         /*--recieved-message-left-margin: 15px;*/
         /*--sentmessage-right-margin: 20px;*/
-        grid-column: 2;
-        grid-row: 1;
         --light-grey: #e7e5df;
         --medium-grey: #d3d0cb;
         --dark-grey: #5e686e;
@@ -68,6 +66,8 @@
         /*overflow-x: scroll;*/
         overflow-y: scroll;
         background: #e7e5df;
+        grid-column: 2;
+        grid-row: 2;
     }
 
     .chat-line {

@@ -154,6 +154,5 @@
         <button class="wideButton" autofocus on:click={() => showAddContactModal = false}>cancel</button>
     </div>
 </dialog>
-<div id="modals 2">
-    <CreateTenantModal bind:showCreateTenantModal></CreateTenantModal>
-</div>
+<CreateTenantModal bind:showCreateTenantModal></CreateTenantModal>
+

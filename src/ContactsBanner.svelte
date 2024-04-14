@@ -77,6 +77,10 @@
         margin-top: 0;
         padding-top: 20px;
     }
+
+    .modals {
+        opacity: 0;
+    }
 </style>
 
 <div class="banner">
@@ -95,7 +99,6 @@
         </svg>
     </button>
 </div>
-<div id="modals">
 <CreateAccountModal bind:showCreateAccountModal></CreateAccountModal>
 <AddContactModal bind:showAddContactModal></AddContactModal>
-</div>
+

@@ -77,7 +77,8 @@
 
     .profile-picture {
         /*width: var(--image-size);*/
-        height: calc(var(--image-size) - 5px);
+        /*height: calc(var(--image-size) - 5px);*/
+        height: 65px;
         aspect-ratio: 1;
         border-radius: 10%;
         margin: 10px var(--image-margin-right) 10px 5px;
